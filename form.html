@@ -13,15 +13,13 @@
                 <h2>General Admission Registration</h2>
             </caption>
             <tr>
-                <td  width="250px">
+                <td valign="top" width="250px">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Name</td>
                                 <td>
                                     <input type="text" placeholder="First Name" style="width: 70px;">
-                                </td>
-                                <td>
                                     <input type="text" placeholder="Last Name" style="width: 70px;">
                                 </td>
                             </tr>
@@ -33,8 +31,9 @@
                             </tr>
                             <tr>
                                 <td>Gender</td>
-                                <td><input type="radio" name="er">Male</td>
-                                <td><input type="radio" name="Female">Female</td>
+                                <td><input type="radio" name="er">Male
+                                     <input type="radio" name="ar">Female
+                                </td>
                             </tr>
                             <tr>
                                 <td>Phone</td>
@@ -69,7 +68,7 @@
                         </tbody>
                     </table>
                 </td>
-                <td valign="top" width="250px">
+                <td style="width: 300px;">
                     <table>
                         <tbody>
                             <tr>
@@ -90,17 +89,19 @@
                             <tr>
                                 <td colspan="2">
                                     <input name="restrictions?" type="radio">Awards Gala Dinner <br>
-                                    <input name="restrictions?" type="radio">Luncheon
+                                    <input name="restrictions?" type="radio">Luncheon <br>
                                     <input name="restrictions?" type="radio">Town Hall
                                 </td>
                             </tr>
                             <tr>
-                                <td>Do you want to see the list of other attendees and their profiles on the official event app?</td>
+                                <td colspan="2">Do you want to see the list of other attendees and their profiles on the official event app?</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input name="restrictions?" type="radio">Yes
-                                    <input name="restrictions?" type="radio">No
+                                    <input name="profiles" type="radio">Yes
+                                </td>
+                                <td>
+                                    <input name="profiles" type="radio">No
                                 </td>
                             </tr>
                         </tbody>
