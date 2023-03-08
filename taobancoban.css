@@ -1,0 +1,11 @@
+thead { 
+    background-color: dimgrey;
+}
+
+thead tr th {
+    padding: 20px;
+}
+
+tbody:hover {
+    background-color: aquamarine;
+}
