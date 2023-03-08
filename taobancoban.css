@@ -1,11 +1,18 @@
-thead { 
-    background-color: dimgrey;
-}
+thead{background-color:#dddddd ;}
 
-thead tr th {
-    padding: 20px;
-}
+
 
 tbody:hover {
     background-color: aquamarine;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
