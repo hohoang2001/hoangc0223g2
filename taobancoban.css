@@ -1,15 +1,5 @@
-thead{background-color:#dddddd ;}
-
-
-
-
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
+table,tr,td{border: 1px solid black;
+    border-collapse: collapse;}
+    td{padding: 25px;}
+    table>tbody>tr:nth-child(odd)>td:nth-child(odd){background-color: black;}
+    table>tbody>tr:nth-child(even)>td:nth-child(even){background-color: black;}
