@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amount</title>
+</head>
+<body>
+        <table>
+            <thead>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >
+                        <input id="sotien" type="number">
+                    </td>
+                    <td>
+                        <select id="form">
+                            <option value="VND">VND</option>
+                             <option value="USD">USD</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="to">
+                            <option value="VND">VND</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button onclick="tinhtien()">convert</button>
+                    </td>
+                </tr>
+            </tbody> 
+        </table>
+        <p id="Result"></p>
+    <script src="thJs.js"></script>
+</body>
+</html>
+
