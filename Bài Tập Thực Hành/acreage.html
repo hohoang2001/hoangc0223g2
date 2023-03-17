@@ -4,19 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tính Điểm Trung Bình & đIỂM tỔNG</title>
 </head>
 <body>
-    <script>
-        a = prompt("Nhập Biến a: ");
-        b = prompt("Nhập Biến B: ");
-        if(a%b ==0){
-            alert("A CHIA HẾT CHO B");
+    <table>
+        <thead>
+            <th>Vật Lý</th>
+            <th>Hoá</th>
+            <th>Sinh Học</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input id="physics" type="number">
+                </td>
+                <td>
+                    <input id="chemical" type="number">
+                </td>
+                <td>
+                    <input id="biology" type="number">
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="3" align="right">
+                    <button onclick="score()">score</button>
+                </td>
+            </tr>
+            <tr>
+                <td>medium_score</td>
+                <td>
+                    <input id="medium_score" type="number" >
+                </td>
+            </tr>
+            <tr>
+                <td>total_score</td>
+                <td>
+                    <input id="total_score" type="number">
+                </td>
+            </tr>
+        </tbody>
+        <script> function score() { 
+        let physics = +document.getElementById("physics").value;
+        let chemical = +document.getElementById("chemical").value;
+        let biology = +document.getElementById("biology").value;
+         if (physics < 0 || chemical < 0 || biology < 0) {
+            alert("Vui Lòng Nhập Lại")
         }
-        else{
-            alert("A KHÔNG CHIA HẾT CHO B");
-        }
-       
-    </script>
+            else if (physics >= 10 || chemical >= 10 || biology >= 10) {
+                alert("Vui Lòng Nhập Lại")
+            }
+              else {
+                medium_score = (physics + chemical + biology) / 3 ;
+                total_score = physics + chemical + biology; 
+               }
+                
+               document.getElementById("medium_score").value=medium_score;
+               document.getElementById("total_score").value=total_score;
+        }  
+        </script>
+    </table>
 </body>
 </html>

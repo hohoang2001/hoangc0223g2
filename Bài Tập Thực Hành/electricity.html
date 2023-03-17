@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    Nhập Số Điện
+                </td>
+                <td>
+                    <input id="money" type="text">
+                </td>
+                <td>
+                    <button onclick="count()">count</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Số Tiền
+                </td>
+                <td>
+                    <input id="result" type="text">
+                </td>
+            </tr>
+        </tbody>
+        <script> function count() {
+                let money = +document.getElementById("money").value;
+                let result =
+                    `${money < 0 ? "Vui Lòng Nhập Lại" :
+                        (money <= 50) ? money * 1678 :
+                            (money <= 100) ? 50 * 1678 + (money - 50) * 1734 :
+                                (money <= 200) ? 50 * 1678 + (50 * 1734) + (money - 100) * 2014 :
+                                    (money <= 300) ? 50 * 1678 + (50 * 1734) + (100 * 2014) + (money - 200) * 2536 :
+                                        (money <= 400) ? 50 * 1678 + (50 * 1734) + (100 * 2014) + (100 * 2536) + (money - 300) * 2834 :
+                                            50 * 1678 + (50 * 1734) + (100 * 2014) + (100 * 2536) + (100 * 2834) + (money - 400) * 2927}`;
+                document.getElementById("result").value = result;
+
+
+
+                /*let money = +document.getElementById("money").value;
+                let result
+                if (money <= 50) {
+                    result = money * 1678 
+                }
+                else if (money <= 100) {
+                    result = 50 * 1678 + (money - 50) * 1734
+                }
+                else if (money <= 200){
+                    result = 50 * 1678 + (50 * 1734) + (money - 100) * 2014
+                }
+                else if (money <=300) {
+                    result = 50 * 1678 + (50 * 1734) + (100 * 2014) + (money - 200) * 2536
+                }
+                else if (money <=400) {
+                    result = 50 * 1678 + (50 * 1734) + (100 * 2014) + (100 * 2536) + (money - 300) * 2834
+                }
+                else {
+                    result = 50 * 1678 + (50 * 1734) + (100 * 2014) + (100 * 2536) + (100 * 2834) +(money - 400) * 2927
+                }
+                  document.getElementById("result").value = result*/
+            }
+
+        </script>
+    </table>
+</body>
+
+</html>

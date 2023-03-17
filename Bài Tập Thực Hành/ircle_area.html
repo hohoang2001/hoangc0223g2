@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ircle area</title>
+</head>
+<body>
+    <p>Nhập Bán Kính Đường Tròn</p>
+    <input id="impor" type="number">
+    <button onclick="cick()">Tính</button>
+    <br>
+    <p>Kết Quả</p>
+    <input id="result" type="number">
+    <script> function cick(){
+        let impor = document.getElementById("impor").value;
+        result = (impor * 2) * Math.PI;
+        document.getElementById("result").value=result.toFixed(2);
+    }
+    </script>
+</body>
+</html>

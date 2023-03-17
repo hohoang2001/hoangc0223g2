@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <h2>Caculator</h2>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <input id="num1" type="number">
+                </td>
+                <td>
+                    <input id="num2" type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="Addition()">Addition(+)</button>
+                    <button onclick="Subtraction()">Subtraction(-)</button>
+                    <button onclick="Multiplication()">Multiplication(X)</button>
+                    <button onclick="Division()">Division(/)</button>
+                </td>
+            </tr>
+            <tr> 
+                <td align="right">Result Division:</td>
+                <td><input id="result" type="number"></td>
+            </tr>
+        </tbody>
+        <script> function Addition() {
+            let num1 = +document.getElementById("num1").value;
+            let num2 = +document.getElementById("num2").value
+            let result = "";
+            if (num1 == 0 && num2 == 0){
+                alert("Vui Lòng Nhập Lại")
+            }
+            else{
+                result = num1 + num2
+                document.getElementById("result").value = result
+            }
+            
+        }
+        function Subtraction() {
+            let num1 = +document.getElementById("num1").value;
+            let num2 = +document.getElementById("num2").value
+            let result = "";
+            if (num1 == 0 && num2 == 0){
+                alert("Vui Lòng Nhập Lại")
+            }
+            else{
+                result = num1 - num2
+                document.getElementById("result").value = result
+            }
+            
+        }
+        function Multiplication() {
+            let num1 = +document.getElementById("num1").value;
+            let num2 = +document.getElementById("num2").value
+            let result = "";
+            if (num1 == 0 && num2 == 0){
+                alert("Vui Lòng Nhập Lại")
+            }
+            else{
+                result = num1 * num2
+                document.getElementById("result").value = result
+            }
+            
+        }
+        function Division() {
+            let num1 = +document.getElementById("num1").value;
+            let num2 = +document.getElementById("num2").value
+            let result = "";
+            if (num1 == 0 && num2 == 0){
+                alert("Vui Lòng Nhập Lại")
+            }
+            else{
+                result = num1 / num2
+                document.getElementById("result").value = result
+            }
+            
+        }
+        </script>
+    </table>
+</body>
+</html>
