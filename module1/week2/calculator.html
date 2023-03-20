@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        td{padding: 10px;}
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <input id="in" type="number" style="width: 170px;" disabled>
+            <tr>
+                <td><button onclick="btn()" value="1">1</button></td>
+                <td><button onclick="btn()" value="2">2</button></td>
+                <td><button onclick="btn()" value="3">3</button></td>
+                <td><button onclick="btn()" value="+">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btn()" value="4">4</button></td>
+                <td><button onclick="btn()" value="5">5</button></td>
+                <td><button onclick="btn()" value="6">6</button></td>
+                <td><button onclick="btn()" value="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btn()" value="7">7</button></td>
+                <td><button onclick="btn()" value="8">8</button></td>
+                <td><button onclick="btn()" value="9">9</button></td>
+                <td><button onclick="btn()" value="*">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btn()" value="C">C</button></td>
+                <td><button onclick="btn()" value="0">0</button></td>
+                <td><button onclick="btn()" value="=">=</button></td>
+                <td><button onclick="btn()" value="/">/</button></td>
+            </tr>
+        </tbody>
+        <script>
+            let inn = document.getElementById("in").value
+            function btn(){
+                btn = inn
+            }
+        </script>
+    </table>
+</body>
+</html>

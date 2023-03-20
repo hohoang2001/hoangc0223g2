@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Chiều Cao</td>
+                <td><input type="number" id="height"></td>
+            </tr>
+            <tr>
+                <td>Cân Nặng</td>
+                <td> <input type="number" id="weight"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="press()" value="Tính"></td>
+            </tr>
+            <tr>
+                <td>
+                    kết quả
+                </td>
+                <td><input id="relsut" type="text"></td>
+            </tr>
+        </tbody>
+        <script>
+            function press() {
+                let height = +document.getElementById("height").value;
+                let weight = +document.getElementById("weight").value;
+                let BMI = (weight / (height ^ 2)).toFixed(2)
+                let relsut = BMI < 18.5 ?
+                     BMI + "underweight" :
+                    BMI < 25.0 ?
+                         BMI + "Normal" :
+                        BMI < 30.0 ?
+                            BMI + "Overweigth" :
+                            BMI + "obese";
+                document.getElementById("relsut").value = relsut
+            }
+
+
+
+        </script>
+    </table>
+
+</body>
+
+</html>
