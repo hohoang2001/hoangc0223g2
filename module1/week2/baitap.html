@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="a" type="number">
+    <input onclick="check()" type="button" value="check">
+    <br>
+    <p id="d"></p>
+    <script>
+        /*function check(){
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let c = a % b == 0 ? "a chia hết cho b" : "a không chia hết cho b";
+            document.getElementById("c").value = c
+        } */
+        /*function check(){
+            let a = +document.getElementById("a").value;
+            let c = a >= 15 ? "đủ tuổi" : "không đủ tuổi"
+            document.getElementById("c").innerHTML= c
+        }*/
+        /* function check(){
+             let a = document.getElementById("a").value;
+             let c = a > 0 ? "lớn hơn 0" : a < 0 ? "nhỏ hơn 0" : "bằng 0"
+             document.getElementById("c").innerHTML = c
+         } */
+        /*function check() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let c = document.getElementById("c").value;
+            let d = a >= b && a >=c ? a :
+            b >= a && b >= c ? b :
+            c >= a && c >=b ? c : a
+
+        
+            document.getElementById("d").innerHTML = d 
+        }*/
+        function check(){
+            let a = document.getElementById("a").value;
+            let b = (a * 10) + "k"
+            document.getElementById("d").innerHTML = b 
+        }
+    </script>
+</body>
+
+</html>
