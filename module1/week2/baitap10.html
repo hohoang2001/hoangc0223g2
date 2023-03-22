@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>nhập a</p>
+    <input id="num1" type="number">
+    <br>
+    <p>nhập b</p>
+    <input id="num2" type="number">
+    <input onclick="check()" value="check" type="button">
+    <br>
+    <p id="relsut"></p>
+    <script>
+        // function check(){
+        //     let num = document.getElementById("num").value;
+        //     let relsut = num * 9/5 + 32;
+        //     document.getElementById("relsut").innerHTML = relsut;
+        // }
+        // function check() {
+        //     let num = document.getElementById("num").value;
+        //     let relsut = num * 3.2808;
+        //     document.getElementById("relsut").innerHTML = relsut;
+        // }
+        //     function check(){
+        //      let num = document.getElementById("num").value;
+        //      let relsut = num * num + "(cm2)"
+        //      document.getElementById("relsut").innerHTML = relsut;
+        //  }
+        // function check(){
+        //      let num1 = document.getElementById("num1").value;
+        //      let num2 = document.getElementById("num2").value;
+        //      let relsut = num1 * num2;
+        //      document.getElementById("relsut").innerHTML = relsut;
+        //  }
+        // function check(){
+        //      let num1 = document.getElementById("num1").value;
+        //      let num2 = document.getElementById("num2").value;
+        //      let relsut = 1/2 * num1 * num2;
+        //      document.getElementById("relsut").innerHTML = relsut;
+        //  }
+        // function check() {
+        //     let num1 = document.getElementById("num1").value;
+        //     let num2 = document.getElementById("num2").value;
+        //     let relsut = -num1/num2;
+        //     document.getElementById("relsut").innerHTML = relsut;
+        // }
+        function check(){
+         let num1 = document.getElementById("num1").value;
+          let num2 = document.getElementById("num2").value;
+          let relsut = 1/2 * num1 * num2;
+          document.getElementById("relsut").innerHTML = relsut;
+      }
+    </script>
+</body>
+
+</html>
